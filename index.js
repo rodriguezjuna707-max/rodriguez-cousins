@@ -254,8 +254,7 @@ const menuData = {
         ]
     },
     'sandwiches': {
-        title: 'Sandwiches',
-        note: 'Breakfast Sandwiches',
+        title: 'Breakfast Sandwiches',
         sized: true,
         items: [
             { name: 'Egg & Cheese', small: '$4', large: '$5' },
@@ -263,7 +262,6 @@ const menuData = {
             { name: 'Sausage, Egg & Cheese', small: '$6', large: '$8' },
             { name: 'Ham & Cheese on Grill', small: '$4', large: '$6' }
         ],
-        footnote: 'All Hot Sandwiches — $5'
     },
     'platters': {
         title: 'Platters',
