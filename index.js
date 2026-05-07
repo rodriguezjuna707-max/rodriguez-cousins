@@ -213,7 +213,6 @@ const menuData = {
     },
     'cheesesteak': {
         title: 'Cheesesteak',
-        note: 'Labeled "Stakes" on menu',
         items: [
             { name: 'Plain Steak', price: '$6' },
             { name: 'Cheese Steak', price: '$7' },
@@ -251,7 +250,7 @@ const menuData = {
             { name: 'Cheese', small: '$7', large: '$9' },
             { name: 'Bologna', small: '$7', large: '$9' },
             { name: 'Beef Bologna', small: '$7', large: '$9' },
-            { name: 'America', small: '$6', large: '—' }
+        
         ]
     },
     'sandwiches': {
