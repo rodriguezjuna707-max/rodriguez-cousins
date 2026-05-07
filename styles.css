@@ -1125,69 +1125,141 @@ p {
 
 /* === Mobile === */
 @media (max-width: 580px) {
-    .navbar ul {
-        height: auto;
-        min-height: 60px;
-        padding: 8px 12px;
+    body {
+        font-size: 18px;
     }
 
-    .navbar__links a {
-        font-size: 0.95rem;
-        padding: 2px 4px;
-        gap: 4px;
+    h2, h3 {
+        font-size: 2.4rem;
     }
 
-    .navbar__links a i {
+    p {
         font-size: 1.15rem;
     }
 
-    .navbar__links {
+    .navbar ul {
+        height: auto;
+        min-height: 64px;
+        padding: 10px 10px;
+    }
+
+    .navbar__links a {
+        font-size: 1.1rem;
+        padding: 4px 6px;
         gap: 6px;
     }
 
+    .navbar__links a i {
+        font-size: 1.4rem;
+    }
+
+    .navbar__links {
+        gap: 10px;
+    }
+
     .site-header {
-        padding-top: 90px;
+        padding-top: 110px;
     }
 
     .site-logo img {
-        height: 200px;
+        height: 280px;
     }
 
     .site-logo__text p {
-        font-size: 1.05rem;
-        gap: 8px;
-        margin-top: -8px;
+        font-size: 1.35rem;
+        gap: 10px;
+        margin-top: -10px;
     }
 
     .site-logo__item i {
-        font-size: 0.95rem;
+        font-size: 1.2rem;
     }
 
     .site-logo__divider {
-        font-size: 1.05rem;
+        font-size: 1.35rem;
     }
 
     .page-section {
-        padding: 16px 16px;
+        padding: 22px 18px;
     }
 
-    /* Smaller floating buttons on phones */
+    .section-content p {
+        font-size: 1.3rem;
+    }
+
+    /* Bigger menu cards so they're easy to tap and read on phones */
+    .menu-column {
+        gap: 14px;
+    }
+
+    .menu-item {
+        width: calc(50% - 14px);
+        max-width: 180px;
+        padding: 14px;
+    }
+
+    .menu-item img {
+        height: 110px;
+    }
+
+    .menu-item p {
+        font-size: 1.15rem;
+        margin-top: 10px;
+    }
+
+    /* Floating buttons — keep tappable */
     .floating-actions {
-        bottom: 14px;
-        right: 14px;
-        gap: 8px;
+        bottom: 16px;
+        right: 16px;
+        gap: 10px;
     }
 
     .fab {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
     }
 
     .fab--trigger {
-        width: 46px;
-        height: 46px;
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
+
+    /* RSVP form — bigger, easier-to-tap inputs */
+    .rsvp-para p {
         font-size: 1.25rem;
+    }
+
+    #rsvp-form input {
+        font-size: 1.1rem;
+        padding: 14px 14px 14px 44px;
+    }
+
+    .rsvp-field i {
+        font-size: 1.25rem;
+    }
+
+    #rsvp-button {
+        font-size: 1.5rem;
+        padding: 14px 36px;
+    }
+
+    /* Footer */
+    .site-footer__name {
+        font-size: 1.9rem;
+    }
+
+    .site-footer__tagline {
+        font-size: 1.25rem;
+    }
+
+    .site-footer__heading {
+        font-size: 1.5rem;
+    }
+
+    .site-footer__col p {
+        font-size: 1.15rem;
     }
 
     .modal-container {
@@ -1196,6 +1268,6 @@ p {
     }
 
     #modal-image {
-        width: 180px;
+        width: 200px;
     }
 }
