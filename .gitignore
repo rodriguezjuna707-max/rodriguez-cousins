@@ -1,0 +1,9 @@
+# Personal working notes
+plan.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

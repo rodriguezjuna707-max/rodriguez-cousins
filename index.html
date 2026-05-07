@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rodriguez cousins</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Bebas+Neue&family=Montserrat:wght@600;700&display=swap">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body class="dark-mode">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <ul>
+                <li class="navbar__links">
+                    <a href="#about"><i class="bi bi-info-circle-fill"></i> About Us</a>
+                    <a href="#contact"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+                    <a href="#menu"><i class="bi bi-card-list"></i> Menu</a>
+                    <a href="#location"><i class="bi bi-pin-map-fill"></i> Location</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- FLOATING ACTION BUTTONS -->
+        <div id="floating-actions" class="floating-actions">
+            <div class="floating-actions__items">
+                <button class="fab" title="Get Directions" onclick="window.open('https://www.google.com/maps/search/?api=1&query=5910+N+5th+St+Philadelphia+PA+19141', '_blank')"><i class="bi bi-geo-alt-fill"></i></button>
+                <button class="fab" title="Call Us" onclick="window.location.href='tel:2154195200'"><i class="bi bi-telephone-fill"></i></button>
+                <button id="theme-button" class="fab" title="Toggle Theme"><i class="bi bi-sun-fill"></i></button>
+            </div>
+            <button id="fab-toggle" class="fab fab--trigger" title="Quick Actions" aria-expanded="false">
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+        </div>
+
+        <!-- HEADER -->
+        <div id="header" class="site-header">
+            <div id="logo" class="site-logo">
+                <img src="logo.png" alt="The Rodriguez & Cousins Logo" />
+                <div class="site-logo__text">
+                    <p>
+                        <span class="site-logo__item"><i class="bi bi-shop"></i> Deli</span>
+                        <span class="site-logo__divider">&middot;</span>
+                        <span class="site-logo__item"><i class="bi bi-basket2"></i> Grocery</span>
+                        <span class="site-logo__divider">&middot;</span>
+                        <span class="site-logo__item"><i class="bi bi-bag-check"></i> Essentials</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ABOUT US -->
+        <div id="about" class="page-section section--light">
+            <h2>About Us</h2>
+            <div class="section-content">
+                <p>Open 7 Days a Week</p>
+                <p>7AM - 7PM</p>
+                <p> </p0>
+            </div>
+        </div>
+
+
+
+
+        <!-- CONTACT US -->
+        <div id="contact" class="page-section section--light">
+            <h2>Contact Us</h2>
+            <div class="section-content">
+                <p>Call Ahead for Faster Pick Up</p>
+                <p>Phone: 215 419 5200</p>
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <div id="menu" class="page-section section--warm">
+            <h2>Menu</h2>
+            <div class="menu-categories">
+                <div class="menu-column">
+                    <div class="menu-item" data-category="burgers">
+                        <img src="images/menu/burger.png" alt="Burgers" />
+                        <p>Burgers</p>
+                    </div>
+                    <div class="menu-item" data-category="cheesesteak">
+                        <img src="images/menu/cheese _stake.png" alt="Cheesesteak" />
+                        <p>Cheesesteak</p>
+                    </div>
+                    <div class="menu-item" data-category="hoagies">
+                        <img src="images/menu/hoogie.png" alt="Hoagies" />
+                        <p>Hoagies</p>
+                    </div>
+                    <div class="menu-item" data-category="sandwiches">
+                        <img src="images/menu/sandwitch.png" alt="Sandwiches" />
+                        <p>Sandwiches</p>
+                    </div>
+                    <div class="menu-item" data-category="platters">
+                        <img src="images/menu/platter.png" alt="Platters" />
+                        <p>Platters</p>
+                    </div>
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="images/menu/breakfast.png" alt="Breakfast" />
+                        <p>Breakfast</p>
+                    </div>
+                    <div class="menu-item" data-category="breakfast-platters">
+                        <img src="images/menu/Break_fast_platter.png" alt="Breakfast Platters" />
+                        <p>Breakfast Platters</p>
+                    </div>
+                    <div class="menu-item" data-category="smoothies">
+                        <img src="images/menu/Smoothies.png" alt="Smoothies" />
+                        <p>Smoothies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FULL MENU -->
+        <div id="full-menu" class="page-section section--warm">
+            <h2>Full Menu</h2>
+            <div class="full-menu-images">
+                <img class="full-menu-image" src="images/full_menu/1.png" alt="Full Menu Page 1" />
+                <img class="full-menu-image" src="images/full_menu/2.png" alt="Full Menu Page 2" />
+            </div>
+        </div>
+
+        <!-- LOCATION / MAP -->
+        <div id="location" class="page-section section--light">
+            <h2>Location</h2>
+            <div class="section-content">
+                <p>5910 N 5th St, Philadelphia, PA 19141</p>
+                <div class="map-wrapper">
+                    <a href="https://www.google.com/maps/search/?api=1&query=5910+N+5th+St+Philadelphia+PA+19141" target="_blank" class="map-overlay"></a>
+                    <iframe src="https://maps.google.com/maps?q=5910+N+5th+St+Philadelphia+PA+19141&output=embed" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- EMAIL SIGNUP -->
+        <div id="rsvp" class="page-section section--light">
+            <h2>Stay in the Loop</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>Sign up to receive emails about specials, new menu items, and exclusive deals</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <div class="rsvp-field">
+                        <i class="bi bi-person-fill"></i>
+                        <input type="text" id="name-input" placeholder="Your Name" required />
+                    </div>
+                    <div class="rsvp-field">
+                        <i class="bi bi-telephone-fill"></i>
+                        <input type="tel" id="phone-input" placeholder="Your Phone" required />
+                    </div>
+                    <div class="rsvp-field">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" id="email-input" placeholder="Your Email" required />
+                    </div>
+                </form>
+                <button id="rsvp-button"><i class="bi bi-bell-fill"></i> Sign Me Up</button>
+            </div>
+        </div>
+
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE)
+        - [ ] Any time after
+        -->
+
+        <!-- IMAGE LIGHTBOX -->
+        <div id="image-lightbox" class="image-lightbox">
+            <span class="image-lightbox__close">&times;</span>
+            <img id="image-lightbox__img" src="" alt="" />
+        </div>
+
+        <!-- MENU PRICE MODAL -->
+        <div id="menu-modal" class="menu-modal">
+            <div class="menu-modal__container">
+                <button class="menu-modal__close" aria-label="Close">&times;</button>
+                <h3 id="menu-modal__title" class="menu-modal__title"></h3>
+                <p id="menu-modal__note" class="menu-modal__note"></p>
+                <div id="menu-modal__body" class="menu-modal__body"></div>
+            </div>
+        </div>
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <!-- Text element here -->
+                    <button id="close-modal-button">Close</button>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-image" src="logo.png" alt="Rodriguez & Cousins Logo" />
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="site-footer">
+            <div class="site-footer__brand">
+                <h3 class="site-footer__name">The Rodriguez &amp; Cousins</h3>
+                <p class="site-footer__tagline">Deli &middot; Grocery &middot; Essentials</p>
+            </div>
+
+            <div class="site-footer__grid">
+                <div class="site-footer__col">
+                    <h4 class="site-footer__heading"><i class="bi bi-clock"></i> Hours</h4>
+                    <p>Open 7 Days a Week</p>
+                    <p>7AM &ndash; 7PM</p>
+                </div>
+
+                <div class="site-footer__col">
+                    <h4 class="site-footer__heading"><i class="bi bi-telephone"></i> Contact</h4>
+                    <p><a href="tel:2154195200">215 419 5200</a></p>
+                </div>
+
+                <div class="site-footer__col">
+                    <h4 class="site-footer__heading"><i class="bi bi-geo-alt"></i> Visit</h4>
+                    <p><a href="https://www.google.com/maps/search/?api=1&query=5910+N+5th+St+Philadelphia+PA+19141" target="_blank">5910 N 5th St<br/>Philadelphia, PA 19141</a></p>
+                </div>
+            </div>
+
+        </footer>
+
+    <script src="index.js"></script>
+    </body>
+</html>
+
